@@ -1,0 +1,117 @@
+
+@import url('http://fonts.cdnfonts.com/css/ed-wood-movies');
+
+
+* {
+    background-color: burlywood;
+    font-family: 'Ed Wood Movies', sans-serif;
+}
+
+.title, .description, .gamePlay {
+    text-align: center;
+    color:darkgreen
+}
+
+#cash {
+	font-size: 30px;
+	width: 300px;
+	height: 35px;
+	padding: 10px;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+    transition: width 0.5s;
+}
+
+#terminal {
+    line-height: 1cm;
+}
+
+#stamina {
+    font-size: 15px;
+	width: 300px;
+	height: 35px;
+	padding-top: 25px;
+}
+
+
+#cash:hover {
+	width: 250px;
+}
+
+#reset, #use, #purchase, #sell, #mowBtn, #breakBtn{
+    display: inline-block;
+    padding: 15px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    background-color: #EFEFEF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+#reset:hover, #purchase:hover, #mowBtn:hover, #breakBtn:hover {
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+
+#sell:hover {
+    background-color: palevioletred;
+    color: whitesmoke;
+}
+
+#use:hover {
+    background-color:peru ;
+    color: whitesmoke;
+}
+
+#reset:active, #mowBtn:active, #breakBtn:active, #use:active, #purchase:active, #sell:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: row;
+    width: 1300px;
+    height: 300px;
+    align-content: space-around;
+    justify-content: center;
+    font-size: 15px;
+    border: 5px solid;
+    margin: 20px;
+    text-align: center;
+  }
+
+  #toolName {
+    color:darkgreen;
+    padding-bottom: 20px;
+  }
+
+  #status {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 1300px;
+    height: 100px;
+    align-content: space-around;
+    justify-content: center;
+    border: none;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .gamePlay {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    width: 1300px;
+    height: 100px;
+    align-content: space-around;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+  }

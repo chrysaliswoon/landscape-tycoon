@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaper Game</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+</head>
+<body>
+    <center>
+        <h1 class="title">Landscape Tycoon</h1>
+
+        <div id="cash">Bank: $100</div>
+        <div id="stamina">Stamina: 100</div>
+    </center>
+
+    <div id="buttons">
+        <div class="teeth">
+            <div id="toolName">Teeth</div>
+            <div id="teethAmt">Qty: 1</div>
+            <div id="teethPrice">Price: Free</div>
+            <br>
+            <div id="staminaCost">Stamina Cost: -50</div>
+            <br>
+            <button id="use" onClick="useTeeth()">USE</button>
+        </div>
+
+        <div class="scissors">
+            <div id="toolName">Rusty Scissors</div>
+            <div id="scissorsAmt">Qty: 0</div>
+            <div id="scissorsPrice">Price: $5</div>
+            <br>
+            <div id="staminaCost">Stamina Cost: -40</div>
+            <br>
+            <button id="purchase" onClick="purchaseScissors()">PURCHASE</button>
+            <button id="use" onClick="useScissors()">USE</button>
+            <button id="sell" onClick="sellScissors()">SELL</button>
+        </div>
+
+        <div class="mower">
+            <div id="toolName">Old-timey Push Lawnmower</div>
+            <div id="mowerAmt">Qty: 0</div>
+            <div id="mowerPrice">Price: $25</div>
+            <br>
+            <div id="staminaCost">Stamina Cost: -30</div>
+            <br>
+            <button id="purchase" onClick="purchaseMower()">PURCHASE</button>
+            <button id="use" onClick="useMower()">USE</button>
+            <button id="sell" onClick="sellMower()">SELL</button>
+        </div>
+
+        <div class="batteryMower">
+            <div id="toolName">Fancy Battery Lawnmower</div>
+            <div id="batteryAmt">Qty: 0</div>
+            <div id="batteryPrice">Price: $250</div>
+            <br>
+            <div id="staminaCost">Stamina Cost: -20</div>
+            <br>
+            <button id="purchase" onClick="purchaseBatteryMower()">PURCHASE</button>
+            <button id="use" onClick="useBatteryMower()">USE</button>
+            <button id="sell" onClick="sellBatteryMower()">SELL</button>
+        </div>
+
+        <div class="students">
+            <div id="toolName">Starving Students</div>
+            <div id="studentsAmt">Hired: 0</div>
+            <div id="studentsPrice">Salary: $500</div>
+            <br>
+            <div id="staminaCost">Stamina Cost: -10</div>
+            <br>
+            <button id="purchase" onClick="purchaseStudents()">HIRE</button>
+            <button id="use" onClick="useStudents()">DEPLOY</button>
+            <button id="sell" onClick="sellStudents()">FIRE</button>
+        </div>
+    </div>
+
+    <div id="status">
+        <p id="terminal">Welcome to your own lanscape empire! <br> Do you have what it takes to be a mogul?</p>
+    </div>
+
+    <div class="gamePlay">
+        <button id="mowBtn" onClick="mowLawn()">Mow Lawn</button>
+        <button id="breakBtn" onClick="takeBreak()">Take a Break</button>
+        <button id="reset" onClick = "reset()">Reset Game</button>
+    </div>
+</body>
+</html>
